@@ -10,6 +10,6 @@ RUN apt-get install -y dionaea-phibo
 
 RUN pip install netifaces
 
-RUN git clone https://github.com/andrewmichaelsmith/honeypot-setup-script.git
+ADD honeypot-setup-script /honeypot-setup-script
 
-CMD bash honeypot-setup-script/setup.bash 0
+CMD bash honeypot-setup-script/setup.bash 1
