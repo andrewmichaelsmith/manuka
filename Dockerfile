@@ -6,7 +6,7 @@ RUN apt-get install -y git wget subversion python-pip gcc python-dev p0f softwar
 
 RUN add-apt-repository -y ppa:honeynet/nightly
 RUN apt-get update
-RUN apt-get install dionaea-phibo
+RUN apt-get install -y dionaea-phibo
 
 RUN pip install netifaces
 
