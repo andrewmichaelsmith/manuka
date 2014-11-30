@@ -27,4 +27,4 @@ fi
 twistd --version
 
 echo "Starting kippo in the foreground..."
-twistd -n -y kippo.tac -l log/kippo.log --pidfile kippo.pid
+twistd -n -y kippo.tac --pidfile kippo.pid
