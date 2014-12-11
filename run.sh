@@ -1,5 +1,9 @@
 #/usr/bin/env bash
 
+# Move SSH server from Port 22 to Port 66534
+sudo sed -i 's:Port 22:Port 65534:g' /etc/ssh/sshd_config
+sudo service ssh reload
+
 # Kippo
 
 docker rm -f kippo
