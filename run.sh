@@ -8,11 +8,7 @@ docker rm -f kippo
 docker run -d -p 22:2222 --name kippo docker_kippo
 
 # Dionaea
-##
-## Well hacky. We stick dionaea on --net host
-## so it gets all the ports on the host and
-## then in the image forward 22 -> Kippo Container
-##
+
 docker rm -f dionaea
 #docker pull andrewmichaelsmith/docker-dionaea
 #docker run -d --publish-all --name dionaea andrewmichaelsmith/docker-dionaea
