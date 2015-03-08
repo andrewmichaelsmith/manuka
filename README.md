@@ -12,7 +12,7 @@ setup
 #
 # Make sure Docker is installed
 #
-wget https://raw.githubusercontent.com/andrewmichaelsmith/manuka/master/run.sh
+wget -p https://raw.githubusercontent.com/andrewmichaelsmith/manuka/master/run.sh
 chmod +x run.sh
 ./run.sh
 ```
