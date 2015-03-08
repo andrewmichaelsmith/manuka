@@ -39,6 +39,7 @@ docker rm -f dionaea
 docker run --restart=always \
 	-v `pwd`/var/dionaea:/vol/dionaea \
 	-d \
+	--name dionaea \
 	-p 21:21 \
 	-p 42:42 \
 	-p 80:80 \
@@ -49,7 +50,8 @@ docker run --restart=always \
 	-p 3306:3306 \
 	-p 5060:5060 \
 	-p 5061:5061 \
-	--name dionaea \
+	-p 69:69/udp \
+	-p 5060:5060/udp \
 	andrewmichaelsmith/dionaea:latest
 
 echo "Done, files in `pwd`/var"
