@@ -1,4 +1,4 @@
-manuka - a honeypot setup script
+manuka - docker honeypot setup script
 ======
 
 A script to run a [dionaea docker image](https://registry.hub.docker.com/u/andrewmichaelsmith/docker-dionaea/) and [kippo docker image](https://registry.hub.docker.com/u/andrewmichaelsmith/docker-kippo).
