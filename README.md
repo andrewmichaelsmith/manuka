@@ -13,7 +13,6 @@ setup
 # Make sure Docker is installed
 #
 curl -q https://raw.githubusercontent.com/andrewmichaelsmith/manuka/master/run.sh > run.sh
-
 chmod +x run.sh
 ./run.sh
 ```
