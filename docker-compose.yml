@@ -1,0 +1,27 @@
+kippo:
+    image: andrewmichaelsmith/kippo
+    volumes:
+       - var/kippo:/vol/kippo
+    ports:
+       - "22:2222"
+    restart: always
+    working_dir: /vol/kippo
+
+dionaea:
+    image: andrewmichaelsmith/dionaea
+    volumes:
+       - var/dionaea:/vol/dionaea
+    ports:
+       - "21:21"
+       - "42:42"
+       - "80:80"
+       - "135:135"
+       - "443:443"
+       - "445:445"
+       - "1433:1433"
+       - "3306:3306"
+       - "5060:5060"
+       - "5061:5061"
+       - "69:69/udp"
+       - "5060:5060/udp"
+    restart: always
