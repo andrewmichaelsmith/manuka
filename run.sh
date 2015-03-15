@@ -2,6 +2,10 @@
 DIR=$(cd $(dirname "$0"); pwd)
 KIPPO_UID=499:499
 DIONAEA_UID=nobody:nogroup
+YML=https://raw.githubusercontent.com/andrewmichaelsmith/manuka/master/docker-compose.yml
+
+#donwload/update yml
+curl -q $YML > docker-compose.yml
 
 # Move SSH server from Port 22 to Port 66534
 echo "Moving SSH server to port 65534"
