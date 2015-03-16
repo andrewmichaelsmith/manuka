@@ -18,7 +18,7 @@ setup
 ```
 # ! This will move SSH from port 22 to 65534
 #
-# Make sure Docker and docker-commpose are installed
+# Make sure Docker and docker-compose are installed
 #
 curl -q https://raw.githubusercontent.com/andrewmichaelsmith/manuka/master/run.sh > run.sh
 chmod +x run.sh
