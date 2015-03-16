@@ -24,3 +24,10 @@ curl -q https://raw.githubusercontent.com/andrewmichaelsmith/manuka/master/run.s
 chmod +x run.sh
 ./run.sh
 ```
+
+effects
+=======
+* Moves SSH server from port 22 to 65534
+* Installs [Dionaea](http://dionaea.carnivore.it/), [micheloosterhof/Kippo](https://github.com/micheloosterhof/kippo)
+* Sets up Dionaea and Kippo as system services that run on startup
+* Uses docker
