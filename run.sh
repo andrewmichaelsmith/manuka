@@ -22,7 +22,7 @@ mkdir -p $DIR/var/dionaea/binaries
 mkdir -p $DIR/var/dionaea/log
 mkdir -p $DIR/var/dionaea/bistreams
 
-sudo chown $KIPPO_UID $DIR/var/kippo 
+sudo chown -R $KIPPO_UID $DIR/var/kippo 
 sudo chown -R $DIONAEA_UID $DIR/var/dionaea
 
 sudo docker-compose up -d
