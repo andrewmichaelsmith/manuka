@@ -16,7 +16,7 @@ sudo pip install docker-compose
 setup
 ======
 ```
-# ! This will move SSH from port 22 to 65535
+# ! This will move SSH from port 22 to 65534
 #
 # Make sure Docker and docker-commpose are installed
 #
