@@ -13,7 +13,7 @@ sudo sed -i 's:Port 22:Port 65534:g' /etc/ssh/sshd_config
 sudo service ssh reload
 
 # Directory setup
-echo "Putting files in $DIR"
+echo "Putting files in $DIR/var"
 mkdir -p $DIR/var/kippo $DIR/var/dionaea
 
 #Dionaea's directories
@@ -26,5 +26,3 @@ sudo chown -R $KIPPO_UID $DIR/var/kippo
 sudo chown -R $DIONAEA_UID $DIR/var/dionaea
 
 sudo docker-compose up -d
-
-echo "Done, files in `pwd`/var"
