@@ -1,3 +1,9 @@
+hpfeeds:
+    image: andrewmichaelsmith/hpfeeds
+    volumes:
+      - var/hpfeeds:/vol/hpfeeds
+    restart: always
+
 kippo:
     image: andrewmichaelsmith/kippo
     volumes:
@@ -6,11 +12,15 @@ kippo:
        - "22:2222"
     restart: always
     working_dir: /vol/kippo
+    links:
+        - hpfeeds
 
 dionaea:
     image: andrewmichaelsmith/dionaea
     volumes:
        - var/dionaea:/vol/dionaea
+    links:
+        - hpfeeds
     ports:
        - "21:21"
        - "42:42"
