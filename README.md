@@ -8,7 +8,7 @@ Next iteration of the [honeypot setup script](https://github.com/andrewmichaelsm
 pre-requisites
 ==============
 ```
-# docker installed
+# docker 1.3+ installed
 sudo apt-get update && sudo apt-get install -y python-pip
 sudo pip install docker-compose
 ```
